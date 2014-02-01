@@ -1,4 +1,3 @@
-
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
@@ -96,6 +95,10 @@ public class HiggsClassIIUniform {
 		createPlot("Uniform Background from 42000 events; 2 Gev Higgs", histogram1,histogram2);
 		
 		
+	}
+	
+	public static void main(String[] args){
+		new HiggsClassIIUniform().doPlottings();
 	}
 	
 	
