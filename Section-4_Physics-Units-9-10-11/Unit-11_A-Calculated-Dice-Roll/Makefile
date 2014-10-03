@@ -1,7 +1,9 @@
 CLASSPATH=".:../../../Dependencies/*"
 
+PRG=HiggsClassIVSeeds
+
 all:
-	javac -classpath $(CLASSPATH) HiggsClassIVSeeds.java
+	javac -classpath $(CLASSPATH) $(PRG).java
 
 run:
-	java -classpath $(CLASSPATH) HiggsClassIVSeeds
+	java -classpath $(CLASSPATH) $(PRG)
