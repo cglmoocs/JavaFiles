@@ -1,5 +1,5 @@
 
-package com.mooc.xinformatics.pagerank;
+// package com.mooc.xinformatics.pagerank;
 /**
  * Original source from http://256.com/sources/jenkins_hash_java/
  *
