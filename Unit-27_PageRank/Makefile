@@ -8,7 +8,7 @@ PRG1=PageRank
 
 all: $(classes)
 
-run :
+run : all
 	$(JVM) -classpath $(CLASSPATH) $(PRG1)
 
 clean :

@@ -7,7 +7,7 @@ classes = $(sources:.java=.class)
 
 all: $(classes)
 
-run :
+run : all
 	$(JVM) -classpath $(CLASSPATH) $(PRG1)
 
 clean :

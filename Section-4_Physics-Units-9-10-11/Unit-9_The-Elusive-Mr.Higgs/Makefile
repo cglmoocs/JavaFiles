@@ -9,7 +9,7 @@ PRG2=HiggsClassIIUniform
 
 all: $(classes)
 
-run :
+run : all
 	$(JVM) -classpath $(CLASSPATH) $(PRG1)
 	$(JVM) -classpath $(CLASSPATH) $(PRG2)
 
