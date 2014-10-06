@@ -1,4 +1,5 @@
 
+
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +23,9 @@ public class HiggsClassISloping {
 	 * Concatenates two given arrays
 	 * @param firstArray
 	 * @param secondArray
-	 * @return concatenaed aray
+	 * @return concatenated aray
 	 */
-	 double[] conactenate(double[] firstArray , double[] secondArray){
+	 double[] concatenate(double[] firstArray , double[] secondArray){
 		int aLen = firstArray.length;
 		   int bLen = secondArray.length;
 		   double[] finalArray= new double[aLen+bLen];
@@ -141,9 +142,9 @@ public class HiggsClassISloping {
  * Create the actual Signal by combining the higs signals(Gaussian signals) and the background signals		*
  ************************************************************************************************************/		
 //Accumalate the sloping Background and gauss(width = 2.0)
-	double[] total = conactenate(sloping, gauss);
+	double[] total = concatenate(sloping, gauss);
 //Accumalate the sloping background and narrowGauss(width = 0.5)
-	double[] narrowTotal = conactenate(sloping, narrowGauss);
+	double[] narrowTotal = concatenate(sloping, narrowGauss);
 //Plotting - The 3 kinds of signals(Sloping Background, Higgs Signal, Combined Signal) where Higgs Signal has width 0.5. 
 //The plot has 15 bins(each bin represents 2 GeV). 
 //See The Plot named "Total Narrow Higgs"
@@ -280,7 +281,7 @@ public class HiggsClassISloping {
 	for (int index = 0; index < narrowGauss.length; index++) {
 		narrowGauss[index] = 0.5 * random.nextGaussian() + 126;
 	}
-	double[] totalBig = conactenate(gaussBig, guassNarrowBig);
+	double[] totalBig = concatenate(gaussBig, guassNarrowBig);
 		//H1D histogram6 
 
 	H1D histogram18 = new H1D("gaussBig", 60, 110, 140);
