@@ -1,4 +1,4 @@
-package com.mooc.xinformatics.pagerank;
+// package com.mooc.xinformatics.pagerank;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
