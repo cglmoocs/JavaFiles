@@ -5,5 +5,5 @@ This repository contains the class materials in Java. You can find the course co
 
 Dependencies
 ------------
-Java libraries are required. We provide the collection of the required libraries in s separated git repository.
+Java libraries are required. We provide the collection of the required libraries in a separated git repository.
 Please find the libraries at: https://github.com/cglmoocs/Dependencies
