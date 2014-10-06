@@ -1,9 +1,15 @@
 JAVAC=javac
+JVM=java
 CLASSPATH=".:$(HOME)/Dependencies/*"
 sources = $(wildcard *.java)
 classes = $(sources:.java=.class)
 
+PRG1=KNNClient
+
 all: $(classes)
+
+run :
+	$(JVM) -classpath $(CLASSPATH) $(PRG1)
 
 clean :
 	rm -f *.class
