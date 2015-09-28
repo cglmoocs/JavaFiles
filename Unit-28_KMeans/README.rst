@@ -21,6 +21,7 @@ Run
 ---
 
 ::
+
 	$ make		# Compile Java
 	$ make run	# Run Java
 
